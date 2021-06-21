@@ -1,27 +1,15 @@
-# sugar
+## sugar
 
-TODO: Write a description here
+### db
 
-## Installation
+make this binary executable `chmod +x bin/micrate` and adjust database url there (adjust the one in `models/post` too).
 
-TODO: Write installation instructions here
+then:
+`bin/micrate create create_posts`
+`bin/micrate up`
 
-## Usage
+### do some crud stuff cli style:
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it (<https://github.com/your-github-user/sugar/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [Benji](https://github.com/your-github-user) - creator and maintainer
+`crystal ./src/sugar.cr -t Index`
+`crystal ./src/sugar.cr -t Index -p "{\"published\":true}"`
+`crystal ./src/sugar.cr -t Create -p "{\"title\":\"Crystal is good\",\"body\":\"shards there are\",\"published\":true}"`
