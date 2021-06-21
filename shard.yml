@@ -1,0 +1,21 @@
+name: sugar
+version: 0.1.0
+
+authors:
+  - Benji <daylightsavings@gmail.com>
+
+targets:
+  sugar:
+    main: src/sugar.cr
+
+crystal: 1.0.0
+
+license: MIT
+
+dependencies:
+  micrate:
+    github: juanedi/micrate
+  granite:
+    github: amberframework/granite
+  pg:
+    github: will/crystal-pg    
